@@ -1,0 +1,15 @@
+@function color($nombre) {
+  @return map-get($map: $paleta01, $key: $nombre);
+}
+
+@function aclara-color($nombre, $opacidad) {
+  @return lighten(color($nombre), $opacidad);
+}
+
+@function oscurece-color($nombre, $opacidad) {
+  @return darken(color($nombre), $opacidad);
+}
+
+@function bkt($name) {
+  @return map-get($map: $breakpoints, $key: $name);
+}

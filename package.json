@@ -1,0 +1,11 @@
+{
+  "name": "prueba_01",
+  "version": "0.0.1",
+  "description": "probando mis habilidades con scss y html",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/styles.scss ./assets/css/styles.css"
+  },
+  "author": "Michael PM",
+  "license": "ISC"
+}

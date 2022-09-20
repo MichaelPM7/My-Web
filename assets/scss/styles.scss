@@ -1,0 +1,11 @@
+//? Fuentes de Google ↓
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+//! Funciones ↓
+@import "functions/variables", "functions/funciones", "functions/mixins";
+
+//* Componentes ↓
+@import "components/ola", "components/fondo", "components/footer", "components/header";
+// @import "components/textos", "components/botones", "components/alertas", "components/diseño", "components/tarjetas";

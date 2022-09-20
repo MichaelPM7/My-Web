@@ -1,0 +1,39 @@
+$paleta01: (
+  "color00": #000000,
+  "color01": #ffffff,
+  "color02": #0099e6,
+  "color03": #3383ab,
+  "color04": #45b0e6,
+  "color05": #004466,
+  "color06": #006699,
+);
+
+// $breakpoints: (
+//   "xs": 0px,
+//   "sm": 576px,
+//   "md": 768px,
+//   "lg": 992px,
+//   "xl": 1200px,
+//   "xxl": 1400px,
+// );
+$breakpoints: (
+  "0": 0,
+  "1": 320px,
+  "2": 480px,
+  "3": 808px,
+  "4": 960px,
+  "5": 1024px,
+  "6": 1328px,
+);
+// $breakpoints: (
+//   "0": 0,
+//   "1": 320px,
+//   "2": 480px,
+//   "3": 768px,
+//   "4": 960px,
+//   "5": 1024px,
+//   "6": 1328px,
+// );
+
+$fuentes: "nl" 20px 400 "Zen Kurenaido", "nlg" 20px 400 "Zen Maru Gothic", "md" 24px 500 "Zen Maru Gothic",
+  "gd" 28px 700 "Zen Maru Gothic", "mgd" 32px 900 "Zen Maru Gothic";

@@ -1,0 +1,17 @@
+@mixin neo($radio, $eje, $color: #e0e0e0, $sombra1, $sombra0) {
+  border-radius: $radio;
+  background: $color;
+  box-shadow: $eje $eje ($eje * 2) $sombra1, (-$eje) (-$eje) ($eje * 2) $sombra0;
+}
+
+@mixin media($min: "1", $max: "2") {
+  @media screen and (min-width: bkt($min)) and (max-width: bkt($max)) {
+    @content;
+  }
+}
+
+@mixin mediaFinal($min: "1") {
+  @media screen and (min-width: bkt($min)) {
+    @content;
+  }
+}
