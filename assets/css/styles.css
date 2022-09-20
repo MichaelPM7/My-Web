@@ -122,21 +122,10 @@ nav ul li a {
   font-size: 15px;
 }
 
-.select {
-  background-color: #359ef9;
-  padding: 10px 30px;
-  color: #ffffff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
 .header__modification {
   height: 70px;
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.062745098);
-  background-color: rgba(255, 255, 255, 0.8784313725);
+  background-color: rgba(255, 255, 255, 0.8156862745);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
@@ -158,6 +147,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .header__logo img {
   width: 150px;
@@ -188,7 +178,7 @@ nav ul li a {
   -o-transition: background 0.3s;
   display: none;
 }
-.header__btn-menu:hover {
+.header__btn-menu:active {
   background-color: rgba(0, 0, 0, 0.106);
 }
 @media screen and (min-width: 0) and (max-width: 808px) {
@@ -203,16 +193,16 @@ nav ul li a {
     top: 100px;
     height: 100vh;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.8156862745);
     backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(10px);
-    right: 0px;
+    -webkit-backdrop-filter: blur(6px);
+    right: -1000px;
     padding: 0 40px;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
+    transition: right 0.3s, top 150ms;
+    -webkit-transition: right 0.3s, top 150ms;
+    -moz-transition: right 0.3s, top 150ms;
+    -ms-transition: right 0.3s, top 150ms;
+    -o-transition: right 0.3s, top 150ms;
   }
 }
 .header__nav--modificador {
@@ -338,6 +328,34 @@ nav ul li a {
     -moz-transform: translateY(10px);
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
+  }
+}
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .move__content {
+    left: -300px;
+    position: absolute;
+  }
+}
+.select {
+  background-color: #359ef9;
+  padding: 10px 30px;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 808px) {
+  .move__nav {
+    right: 0px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .move__nav {
+    right: 0px;
+    width: 100vw;
   }
 }
 

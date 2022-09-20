@@ -37,22 +37,11 @@ nav {
   }
 }
 
-.select {
-  background-color: #359ef9;
-  padding: 10px 30px;
-  color: #ffffff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
 .header {
   &__modification {
     height: 70px;
     box-shadow: 1px 1px 10px 0 #00000010;
-    background-color: #ffffffe0;
+    background-color: #ffffffd0;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     @include media("0", "3") {
@@ -74,7 +63,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: relative;
     & img {
       width: 150px;
     }
@@ -107,7 +96,7 @@ nav {
 
     display: none;
 
-    &:hover {
+    &:active {
       background-color: rgba(0, 0, 0, 0.106);
     }
     @include media("0", "3") {
@@ -122,16 +111,16 @@ nav {
       top: 100px;
       height: 100vh;
       position: fixed;
-      background-color: #ffffffe0;
+      background-color: #ffffffd0;
       backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(10px);
-      right: 0px;
+      -webkit-backdrop-filter: blur(6px);
+      right: -1000px;
       padding: 0 40px;
-      transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
+      transition: right 0.3s, top 150ms;
+      -webkit-transition: right 0.3s, top 150ms;
+      -moz-transition: right 0.3s, top 150ms;
+      -ms-transition: right 0.3s, top 150ms;
+      -o-transition: right 0.3s, top 150ms;
     }
   }
   &__nav--modificador {
@@ -268,5 +257,35 @@ nav {
     -moz-transform: translateY(10px);
     -ms-transform: translateY(10px);
     -o-transform: translateY(10px);
+  }
+}
+
+@include media("0", "2") {
+  .move__content {
+    left: -300px;
+    position: absolute;
+  }
+}
+
+.select {
+  background-color: #359ef9;
+  padding: 10px 30px;
+  color: #ffffff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@include media("2", "3") {
+  .move__nav {
+    right: 0px;
+  }
+}
+@include media("0", "2") {
+  .move__nav {
+    right: 0px;
+    width: 100vw;
   }
 }

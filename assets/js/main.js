@@ -11,3 +11,13 @@ window.onscroll = scrollBar = () => {
     nav.classList.remove("header__nav--modificador");
   }
 };
+
+document.getElementById("header__btn-menu").addEventListener("click", mostrar_menu);
+
+let menu = document.getElementById("header__container");
+let nav = document.getElementById("header__nav");
+
+function mostrar_menu() {
+  menu.classList.toggle("move__content");
+  nav.classList.toggle("move__nav");
+}
